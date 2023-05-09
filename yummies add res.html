@@ -1,0 +1,83 @@
+<html>
+<html>
+	<head>
+		<title>Login to Yummies</title>
+		<script>
+function addItemHTML () {
+  document.getElementById("demoC").innerHTML +=document.getElementById("demo").value ;
+  if(number(li)>10){
+  	print("cannot add more than 10")
+
+  }
+
+}
+</script>
+
+		<style>
+			body{
+    background-color:#F1F6F5;
+    background-image: linear-gradient(315deg,#F1F6F5);
+    font-family: 'Poppins' ,sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.inside{
+	align-content: center;
+	/*background-color:blue;*/
+	padding-top: 10px;
+	padding-right: 0px;
+}
+.container{
+	  background-color:black;
+    border-radius:10px;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    width:600px;
+    overflow:hidden;
+    text-align: center;
+
+}
+button{
+    background-color:orange ;
+    color:black;
+    opacity: 0.8;
+    border:none;
+    display:block;
+    width:100%;
+    cursor:pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding:1.3rem;
+}
+h2{
+	text-align: center;
+}
+.button{
+	background-color: orange;
+}
+
+		</style>
+	</head>
+	<body>
+		
+		<div class ="container">
+			<h3 >Add restraunts of your choice!!</h3><br>
+			<div class ="inside">
+				<ul id="demoC">
+  <li>Krishnam hotel</li>
+  <li>RK restraunt</li>
+  <li>Dominos</li>
+</ul>
+				<input type="text" name="restaurant" id = "demo"><br><br>
+				
+		<input type="button" value="Add Item" onclick="addItemHTML()"/>
+			
+
+			</div>
+		</div>
+	</body>
+</html>
+</html>

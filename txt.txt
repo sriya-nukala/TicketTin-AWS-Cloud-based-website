@@ -1,0 +1,19 @@
+<?php
+session_start(); 
+include "db_conn.php";
+// echo $_SESSION['name'];
+$nid= $_SESSION['user_name'];
+$sql = "SELECT id FROM users WHERE user_name='$nid' ";
+$result = mysqli_query($conn, $sql);
+while ($row = mysqli_fetch_array($result)) {
+    $bid= $row['id'];
+}
+$sql2 = "SELECT * FROM bookings WHERE id='$nid' ";
+$result2 = mysqli_query($conn, $sql2);
+while ($row1 = mysqli_fetch_assoc($result2)) {
+    ?>
+<!-- $row1 = mysqli_fetch_array($result2); -->
+   
+
+                
+                ?>
